@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Shipping Cost</title>
+    <style type="text/css">
+        .sh_cover {
+            font-size: 12px;
+        }
+
+            .sh_cover table {
+                width: 100%
+            }
+
+                .sh_cover table td {
+                    vertical-align: top;
+                }
+
+        .txt-right {
+            text-align: right;
+            width: 100%;
+            float: left;
+        }
+
+        .sh_cost {
+            width: 100%;
+            display: block;
+            padding: 15px 0;
+            border-bottom: 1px dashed #000;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .info_left, .info_right {
+            width: 50%;
+            float: left;
+        }
+
+        .info_left {
+            text-align: left
+        }
+
+        .info_right {
+            text-align: right
+        }
+
+        .star {
+            min-width: 26px;
+            text-align: right;
+            display: block;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sh_cover">
+        <div class="sh_cost">
+            <div class="info_left">
+                <p>{sh_id} 運賃計算書  {yyyy} 年 {mm} 月度</p>
+                <p>{usr_name} 殿 </p>
+                <p>{block_code} {block_name}</p>
+                <p>{contract_type_name} {transaction_type_name}</p>
+            </div>
+            <div class="info_right">
+                <p>作成日 {created_time} {page_num}</p>
+                <p>{prodiver_cd} {provider_name}</p>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <td>
+                        出庫日<br />
+                        届け日
+                    </td>
+                    <td>
+                        出庫拠点（ｺｰﾄﾞ/ ﾒｲｼｮｳ）
+                    </td>
+                    <td>納入先（JIS / ｼﾞｭｳｼｮ / ﾒｲｼｮｳ）</td>
+                    <td>
+                        車両
+                        <br />
+                        輸送手段
+                    </td>
+                    <td>
+                        商品（ｺｰﾄﾞ / ｷｺﾞｳ / ﾒｲｼｮｳ）
+                    </td>
+                    <td>距離</td>
+                    <td>
+                        数量
+                        <br />
+                        （梱）
+                    </td>
+                    <td>
+                        重量 <br />
+                        （KG）
+                    </td>
+                    <td>
+                        基本運賃
+                        <br />
+                        持戻運賃
+                    </td>
+                    <td>
+                        中継料
+                        <br />
+                        ｷﾛ 増料
+                    </td>
+                    <td>
+                        航送料
+                        <br />
+                        時間増料
+                    </td>
+                    <td>助手料</td>
+                    <td>
+                        道路代
+                        <br />
+                        洗浄料
+                    </td>
+                    <td>
+                        台貫料
+                        <br />
+                        その他
+                    </td>
+                    <td>調整額</td>
+                    <td>
+                        合計運賃
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                {table_content}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

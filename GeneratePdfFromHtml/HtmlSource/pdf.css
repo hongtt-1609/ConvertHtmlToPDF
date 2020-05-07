@@ -1,0 +1,31 @@
+﻿body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", TakaoPGothic, sans-serif;
+}
+.sh_cover table  tr th {
+    background-color: #fafafa
+}
+.sh_cover table tr td, .sh_cover table tr th {
+    border: 1px solid #ddd
+}
+.sh_cost {
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid dashed;
+}
+
+.info_left, .info_right {
+    width: 50%;
+    float: left;
+}
+
+.info_left {
+    text-align: left
+}
+
+.info_right {
+    text-align: right
+}
+.star {min-width:20px;
+       text-align:right;
+}

@@ -1,0 +1,15 @@
+﻿.table {
+    width: 100%
+}
+
+    .table tr, .table td, .table th {
+        border: 1px solid #ddd;
+        padding: 5px;
+        color:green;
+        
+    }
+
+    .table th {
+      background-color:#ddd
+    }
+
